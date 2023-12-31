@@ -1,0 +1,163 @@
+body {
+  background-color: #0a2d4d;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 4em;
+  font-family: Arial;
+  font-size: xx-large;
+}
+p {
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 200;
+}
+.userResponse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userResponse p {
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+/* .generatedPswrd p{
+    text-align: left;
+} */
+.generatedPswrd input {
+  width: 38em;
+  padding: 0.8em 0.9em;
+  border: 1px solid #000;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+.passwordType p {
+  margin-top: 0;
+}
+.passwordType i {
+  color: #fff;
+  padding: 0em 0.5em;
+}
+.passwordType select {
+  width: 19em;
+  font-family: Arial;
+  font-size: 0.8em;
+  padding: 0.8em 1.5em;
+  border-radius: 20px;
+  background-color: #0a2d4d;
+  border: 2px solid #3b5770;
+  color: #fff;
+}
+.length {
+  display: flex;
+  /* flex-wrap: wrap; */
+  background-color: #0a253c;
+  height: auto;
+  width: auto;
+  margin-top: 2em;
+  padding: 0.3em 4em;
+}
+.length p {
+  margin-right: 1em;
+}
+.value {
+  margin-left: 1em;
+}
+.length input {
+  width: 8em;
+}
+.counter{
+  margin-left: 0.8em;
+}
+.numberSymbol {
+  display: flex;
+}
+.numberSymbol input {
+  width: 1.4em;
+  margin-right: 0.6em;
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: Arial;
+  font-size: 0.8em;
+  padding: 0.8em 1.5em;
+  text-transform: capitalize;
+  width: 19em;
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .generatedPswrd input {
+    width: 30em;
+  }
+  .generatedPswrd p {
+    text-align: center;
+  }
+  .passwordType {
+    /* margin-top: 1em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .passwordType abbr i {
+    margin: 1em 0px;
+  }
+  .passwordType select {
+    width: 33em;
+  }
+  button {
+    width: 33em;
+  }
+}
+@media only screen and (max-width: 445px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .generatedPswrd input {
+    width: 20em;
+  }
+  .passwordType select {
+    width: 23em;
+  }
+  button {
+    width: 23em;
+  }
+  .length {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Need a password? Try the 1Password Strong <br>Password Generator.</h1>
+            <p>Generate secure, random passwords to stay safe online.</p>
+        </div>
+        <div class="userResponse">
+            <div class="generatedPswrd">
+                <p>Generated password:</p>
+                 <input type="text" id="password" disabled>
+                 <p id="copied"></p>
+            </div>
+            <div class="passwordType">
+                <p>Password type:</p>
+                <select>
+                    <option value="Random-Password">Random Password</option>
+                </select>
+                <abbr title="Refresh Passwrod Generator"><i onclick="randomPassword()" class="fa-solid fa-arrows-rotate"></i></abbr>
+                <button id="generatePswBtn"> copy secure password
+                </button>               
+            </div>
+            <div class="length">
+                <p>Length</p>
+                <input type="range" min="1" max="30" id="inputRange">
+                <p class="counter">0</p>
+                <!-- <div class="numberSymbol">
+                    <input type="checkbox">
+                    <p>Numbers</p>
+                    <input type="checkbox">
+                    <p>Symbols</p>
+                </div> -->
+            </div>
+        </div>
+
+<script src="app.js"></script>
+</body>
+</html>

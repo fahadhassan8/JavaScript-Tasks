@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&family=Spinnaker&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 74.2% 50.9%,
+    rgb(14, 72, 222) 5.2%,
+    rgb(3, 22, 65) 75.3%
+  );
+}
+.main {
+  height: 75vh;
+  padding: 1em 3em;
+  margin-top: 2em;
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-vector/realistic-ramadan-concept_52683-35676.jpg?size=626&ext=jpg&ga=GA1.1.912702498.1686736900&semt=ais");
+  background-repeat: no-repeat;
+  background-size: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 3em;
+  color: #f6f6f5;
+}
+.main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0.3em;
+  cursor: pointer;
+}
+#ramadanPara {
+  font-family: "Spinnaker", sans-serif;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+#ramdanSpan {
+  /* color:#c98118 */
+  /* color: rgb(247, 135, 247); */
+  /* color: linear-gradient(106.7deg, rgb(151, 150, 240) 12.1%, rgb(255, 206, 236) 63.2%); */
+  color: #70aee5;
+}
+#span {
+  font-size: 0.4em;
+  color: #8f95b7;
+  cursor: auto;
+}
+#counter {
+  display: flex;
+  justify-content: center;
+  gap: 1.3em;
+}
+.main h1 {
+  font-size: 3rem;
+  font-family: "Grenze Gotisch", serif;
+}
+.main h2 {
+  margin: 0px;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(-20);
+  background-color: #00001a;
+  padding: 0.6em 0px;
+}
+.footer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2em;
+  color: #f6f6f5;
+}
+
+@media screen and (max-width: 600px) {
+  .main p {
+    font-size: 1.5em;
+  }
+  #span {
+    font-size: 0.4em;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .main {
+    width: 95%;
+  }
+  .main h1 {
+    font-size: 2.5em;
+  }
+  #span {
+    font-size: 0.4em;
+  }
+  .footer p {
+    font-size: 0.95em;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .main {
+    width: 73%;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 3em;
+  }
+  #span {
+    font-size: 0.5em;
+  }
+  .footer p {
+    font-size: 0.7em;
+  }
+  .main h1 {
+    font-size: 1.7em;
+  }
+  .main p {
+    font-size: 1.45em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #ramadanPara {
+    margin-top: 3em;
+    font-size: 0.85em;
+  }
+  .main p {
+    font-size: 1.4em;
+    margin-top: 0.8em;
+  }
+}
