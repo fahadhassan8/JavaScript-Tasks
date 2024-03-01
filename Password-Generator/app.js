@@ -118,11 +118,8 @@ function copyPassword(){
 }
 pswrdBtn.addEventListener('click',copyPassword)
 
-
-
-inputRange.addEventListener('input',getRange)
-
 function getRange(){
     counter.innerText = inputRange.value
     randomPassword()
 }
+inputRange.addEventListener('input',getRange)
