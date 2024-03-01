@@ -1,0 +1,117 @@
+@font-face {
+    font-family: font;
+    src: url(./assets/fonts/sofiapro-light.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f3f3f3 !important;
+}
+header{
+    width: 100%;
+    background-color: #e1e1e1 !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: fixed;
+    z-index: 1;
+}
+.navbar{
+    font-family: font;
+    background-color: #e1e1e1 !important;
+
+}
+.navbar-toggler-icon{
+    background-color: black;
+    color: black !important;
+}
+#main{
+    margin: auto;
+    padding-top: 6.5em;
+}
+#main img{
+    object-fit: contain;
+}
+.black{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+.white{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.red{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: red;
+    border: 1px solid #000;
+}
+.silver{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: rgb(180, 179, 179);
+    border: 1px solid #000;
+}
+.gray{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: gray;
+    border: 1px solid #000;
+}
+.blue{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid blue;
+}
+.pink{
+    width:16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: rgb(244, 184, 194);
+    border: 1px solid #000;
+}
+.card{
+    font-family: font;
+    justify-content: center;
+    cursor: pointer;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.card-body{
+    background-color: #e4e4e4 !important;
+}
+.card-img-top{
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+}
+.card-img-top:hover{
+    animation-name: animate__pulse
+}
+.searchAlert{
+    padding-top: 15em;
+}
+@media only screen and (max-width:992px){
+    .d-flex.ms-auto.gap-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .responsiveAlert{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
